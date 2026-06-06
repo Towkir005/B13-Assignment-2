@@ -1,5 +1,7 @@
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    font-family: Inter,sans-serif;
 }
 
 header {
@@ -93,6 +95,7 @@ nav li a {
 .podcast-section h1{
     font-size: 48px;
     font-weight: bold;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 .podcast-section p{
@@ -108,18 +111,116 @@ nav li a {
     align-items: center;
     
 }
-.number-box{
-    /* margin: 0 auto; */
-}
+
 .number-box h1{
     font-size: 48px;
     font-weight:bold;
     color: #00FF88;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 .number-box p{
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.grid-section{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #230E3D;
+}
+.grid-section h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 48px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.grid-container{
+    display: grid;  
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 120px;
+}
+.grid-box{
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 40px;
+}
+.grid-box img{
+    width:50px;
+    height: auto;
+    object-fit: cover;
+}
+.grid-box h3{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.grid-box p{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height:1.6;
+}
+.box-1 {
+    grid-row: span 2;
+}
+.box-2{
+    grid-column: span 2;
+
+}
+.box-4{
+    grid-column: span 2;
+}
+.box-5{
+    grid-column: span 1;
+}
+
+.video-section{
+    padding: 100px 200px 120px 200px;
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    margin: 0;
+}
+.video-section h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.video-box{
+    max-width: 380px;
+    margin:0 auto;
+    background-color: #250D44;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.video-box iframe{
+    width: 100%;
+    height:214px;
+}
+.video-box h3{
+    font-size: 22px;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+.video-box p{
+    font-size: 16px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.video-time{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 20px;
+    margin-bottom: 12px;
 }
