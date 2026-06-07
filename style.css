@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 header {
@@ -82,145 +82,223 @@ nav li a {
     position: relative;
 }
 
-.podcast-container{
+.podcast-container {
     max-width: 1600px;
     height: 646px;
     background-color: #1A0B2E;
     color: #FFFFFF;
 }
-.podcast-section{
+
+.podcast-section {
     text-align: center;
     padding: 50px 200px;
 }
-.podcast-section h1{
+
+.podcast-section h1 {
     font-size: 48px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 16px;
 }
-.podcast-section p{
+
+.podcast-section p {
     font-size: 16px;
-    line-height:2;
+    line-height: 2;
 }
 
 
-.number-section{
+.number-section {
     display: flex;
     gap: 80px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.number-box h1{
+.number-box h1 {
     font-size: 48px;
-    font-weight:bold;
+    font-weight: bold;
     color: #00FF88;
     justify-content: center;
     align-items: center;
     margin-top: 0;
     margin-bottom: 16px;
 }
-.number-box p{
+
+.number-box p {
     font-size: 16px;
     color: #FFFFFF;
 }
 
-.grid-section{
+.grid-section {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #230E3D;
 }
-.grid-section h1{
+
+.grid-section h1 {
     text-align: center;
     color: #FFFFFF;
     font-size: 48px;
     margin: 0 auto;
     padding-top: 100px;
 }
-.grid-container{
-    display: grid;  
-    grid-template-columns: repeat(3,1fr);
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-content: center;
     padding: 120px;
 }
-.grid-box{
+
+.grid-box {
     background-color: #351165;
     border-radius: 40px;
     padding: 40px;
 }
-.grid-box img{
-    width:50px;
+
+.grid-box img {
+    width: 50px;
     height: auto;
     object-fit: cover;
 }
-.grid-box h3{
+
+.grid-box h3 {
     font-size: 24px;
     color: #FFFFFF;
 }
-.grid-box p{
+
+.grid-box p {
     font-size: 16px;
     color: #FFFFFF;
-    line-height:1.6;
+    line-height: 1.6;
 }
+
 .box-1 {
     grid-row: span 2;
 }
-.box-2{
+
+.box-2 {
     grid-column: span 2;
 
 }
-.box-4{
+
+.box-4 {
     grid-column: span 2;
 }
-.box-5{
+
+.box-5 {
     grid-column: span 1;
 }
 
-.video-section{
+.video-section {
     padding: 100px 200px 120px 200px;
     background-color: #1A0B2E;
     color: #FFFFFF;
     margin: 0;
 }
-.video-section h1{
+
+.video-section h1 {
     text-align: center;
     font-size: 48px;
     margin-bottom: 40px;
 }
-.video-container{
+
+.video-container {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.video-box{
+
+.video-box {
     max-width: 380px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #250D44;
     border-radius: 20px;
     overflow: hidden;
 }
-.video-box iframe{
+
+.video-box iframe {
     width: 100%;
-    height:214px;
+    height: 214px;
 }
-.video-box h3{
+
+.video-box h3 {
     font-size: 22px;
     padding-left: 20px;
     margin-bottom: 12px;
 }
-.video-box p{
+
+.video-box p {
     font-size: 16px;
     padding-left: 20px;
     color: #FFFFFF;
     line-height: 1.5;
     margin-bottom: 12px;
 }
-.video-time{
+
+.video-time {
     display: flex;
     align-items: center;
     gap: 6px;
     padding-left: 20px;
     margin-bottom: 12px;
+}
+
+.host-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 120px;
+}
+
+.host-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #250D44;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.host-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.host-content h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.host-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon img {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #533C72;
+    object-fit: contain;
+}
+
+.footer-section{
+    background: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
 }
