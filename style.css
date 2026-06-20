@@ -48,9 +48,11 @@ nav li a {
     background: url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 760px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -59,12 +61,17 @@ nav li a {
     position: relative;
 
 }
+.circle-image img {
+    width: 350px;
+    height: 350px;
+    display: block;
+}
 
 .microphone {
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .microphone img {
@@ -72,13 +79,48 @@ nav li a {
     height: 175px;
 }
 
-.circle-image img {
-    width: 350px;
-    height: 350px;
+.banner-content{
+    text-align: center;
 }
 
-.circle-image {
-    position: relative;
+.banner-content h1{
+    color: #FFFFFF;
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+.banner-content p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+.btn-one{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding:12px 20px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #fca746 0%, #fb3f81 100%);
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.btn-two{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding:12px 20px;
+    background: transparent;
+    border: 2px solid #00FF88;
+    border-radius: 50px;
+    color: #00FF88;
+    font-size: 16px;
 }
 
 .podcast-container {
@@ -336,4 +378,3 @@ nav li a {
     font-size: 16px;
     margin-bottom: 20px;
 }
-
